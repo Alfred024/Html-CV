@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.div-padding{
+    padding: 25px 15px;
+}
+.div-horizontal-margin{
+    margin: 0px 10px;
+}
+.CV-Container{
+    display: flex;
+    height: 1058px;
+    width: 830px;
+}
+.Personal-Data-Container{
+    width: 30%;
+    height: 100%;
+    border: solid black 2px;
+}
+.Skils-Data-Container{
+    width: 70%;
+    height: 100%;
+    border: solid red 2px;
+}
