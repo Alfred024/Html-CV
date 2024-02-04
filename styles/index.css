@@ -1,14 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* body{
     display: flex;
     justify-content: center;
     height: fit-content;
     border: solid green 2px;
 } */
+ul{
+    list-style: none;
+}
 .div-padding{
     padding: 25px 15px;
 }
 .div-horizontal-margin{
     margin: 0px 10px;
+}
+.display-flex-horizontal{
+    display: flex;
+    align-items: center;
 }
 .CV-Container{
     margin: auto;
@@ -38,6 +50,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+.Icon{
+    padding: 10px;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 20px;
+    margin: 10px;
 }
 
 /* Right part of CV */
