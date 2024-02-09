@@ -13,7 +13,7 @@ ul{
     list-style: none;
 }
 .div-padding{
-    padding: 25px 15px;
+    padding: 25px 10px;
 }
 .div-horizontal-margin{
     margin: 0px 10px;
@@ -32,7 +32,7 @@ ul{
 /* Left part of CV */
 .Personal-Data-Container{
     position: relative;
-    width: 35%;
+    width: 38%;
     height: 100%;
     border: solid black 4px;
 }
@@ -46,22 +46,54 @@ ul{
     width: 80%;
 }
 .Personal-Data-SubContainer{
+    margin-top: 20px;
     height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 .Icon{
-    padding: 10px;
+    padding: 7px;
     background-color: black;
     color: #ffffff;
     border-radius: 20px;
-    margin: 10px;
+    margin-block: 2px;
+    margin-right: 3px;
 }
 
 /* Right part of CV */
 .Skils-Data-Container{
-    width: 65%;
+    width: 62%;
     height: 100%;
-    border: solid black 2px;
+}
+.Name-Title{
+    height: 20%;
+    font-family: 'Caveat', cursive;
+    font-size: 3.5em;
+}
+.Skils-Data-Container-Title{
+    width: fit-content;
+    color: white;
+    background-color: black;
+    padding: 3px 50px;
+    border-radius: 20px;
+}
+.Skils-Data-Container-Info{
+    height: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Horizontal-Line{
+    color: black;
+    size: 0.5px;
+}
+.Unorder-List1{
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.Unorder-List1 li{
+    margin: 5px;
 }
