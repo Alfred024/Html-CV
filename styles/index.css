@@ -9,11 +9,14 @@
     height: fit-content;
     border: solid green 2px;
 } */
+h2,h3,p,b{
+    font-family: 'Raleway', sans-serif;
+}
 ul{
     list-style: none;
 }
 .div-padding{
-    padding: 25px 10px;
+    padding: 15px 10px;
 }
 .div-horizontal-margin{
     margin: 0px 10px;
@@ -67,11 +70,12 @@ ul{
     height: 100%;
 }
 .Name-Title{
-    height: 20%;
+    height: 15%;
     font-family: 'Caveat', cursive;
     font-size: 3.5em;
 }
 .Skils-Data-Container-Title{
+    margin-bottom: 10px;
     width: fit-content;
     color: white;
     background-color: black;
@@ -79,7 +83,7 @@ ul{
     border-radius: 20px;
 }
 .Skils-Data-Container-Info{
-    height: 80%;
+    height: 85%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -90,10 +94,13 @@ ul{
     size: 0.5px;
 }
 .Unorder-List1{
-    padding-top: 10px;
     padding-left: 15px;
 }
 
 .Unorder-List1 li{
     margin: 5px;
+}
+.Skils-Technics-Container{
+    display: flex;
+    justify-content: space-between;
 }
