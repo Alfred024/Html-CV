@@ -4,7 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae</title>
-    <link rel="stylesheet" href="./styles/index.css">
+    <!-- <link rel="stylesheet" href="./styles/index.css"> -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h2,h3,p,b{
+            font-family: 'Raleway', sans-serif;
+        }
+        ul{
+            list-style: none;
+        }
+        .div-padding{
+            padding: 15px 10px;
+        }
+        .div-horizontal-margin{
+            margin: 0px 10px;
+        }
+        .display-flex-horizontal{
+            display: flex;
+            align-items: center;
+        }
+        .CV-Container{
+            margin: auto;
+            display: flex;
+            height: 1058px;
+            width: 830px;
+        }
+        
+        /* Left part of CV */
+        .Personal-Data-Container{
+            position: relative;
+            width: 38%;
+            height: 100%;
+            border: solid black 4px;
+        }
+        .Img-Spacer{
+           height: 20%;
+        }
+        #Profile-Img{
+            position: absolute;
+            top: 25px;
+            right: -10px;
+            width: 80%;
+        }
+        .Personal-Data-SubContainer{
+            margin-top: 20px;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .Icon{
+            padding: 7px;
+            background-color: black;
+            color: #ffffff;
+            border-radius: 20px;
+            margin-block: 2px;
+            margin-right: 3px;
+        }
+        
+        /* Right part of CV */
+        .Skils-Data-Container{
+            width: 62%;
+            height: 100%;
+        }
+        .Name-Title{
+            height: 15%;
+            font-family: 'Caveat', cursive;
+            font-size: 3.5em;
+        }
+        .Skils-Data-Container-Title{
+            margin-bottom: 10px;
+            width: fit-content;
+            color: white;
+            background-color: black;
+            padding: 3px 50px;
+            border-radius: 20px;
+        }
+        .Skils-Data-Container-Info{
+            height: 85%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .Horizontal-Line{
+            color: black;
+            size: 0.5px;
+        }
+        .Unorder-List1{
+            padding-left: 15px;
+        }
+        
+        .Unorder-List1 li{
+            margin: 5px;
+        }
+        .Skils-Technics-Container{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
 
     <!-- Font Awesome -->
     <script
@@ -26,7 +128,7 @@
             <div class="Img-Spacer"></div>
             <img 
                 id="Profile-Img"
-                src="./assets/profile-picture.jpeg" alt="">
+                src="https://scontent.fcyw4-1.fna.fbcdn.net/v/t39.30808-6/387147930_1714657018944908_5675621354853692840_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeF3ywzt5kwpW40f84nYzfb3K08Jjz4-UaQrTwmPPj5RpPgUoFVsdNAYcimuZ3pXo2aJKJ4G_wU-YaPhAScik5c8&_nc_ohc=PJjlHfhNSfUAX_7rCXj&_nc_ht=scontent.fcyw4-1.fna&oh=00_AfBb9eDZZHY0t_XHK-tjHP8bAuWQ3d32CZjmMGq5amUvCA&oe=65DFA0C1" alt="">
 
             <div class="Personal-Data-SubContainer">
                 <div >
@@ -89,7 +191,7 @@
                             <p>Colaborador como desarrollador backend para el departamento de Desarrollo de Software del Tecnológico de Celaya.</p>
                         </li>
                         <li>
-                            <p>Desarrollo frontend para la empresa 'empresa'.</p>
+                            <p>Desarrollo frontend como Freelancer para empresas y clientes.</p>
                         </li>
                     </ul>
 
@@ -112,18 +214,13 @@
                             <p>Ponente y colaborador impartiendo el taller de Git y Github durante la semana lince 2023.</p>
                         </li>
                         <li>
+                            <p>Ponente y colaborador impartiendo el taller de Búsquedas avanzadas en Chromne durante la semana lince 2023.</p>
+                        </li>
+                        <li>
                             <p>Colaborador como desarrollador frontend y asistente en el taller de Concurso de Basta en el CIITEC 2023.</p>
                         </li>
                     </ul>
 
-                    <p><b>Investigación</b></p>
-                    <ul class="Unorder-List1"> 
-                        <li>
-                            <p>Investigador en el proyecto de Detección de fallos en equipos industriales con clasificación de imágenes térmicas.</p>
-                        </li>
-                    </ul>
-
-                </div>
     
                 <div>
                     <h3 class="Skils-Data-Container-Title">Educación</h3>
