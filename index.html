@@ -1,122 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae</title>
-    <!-- <link rel="stylesheet" href="./styles/index.css"> -->
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        :root{
-            --blue-primary: #598be7;
-        }
-        h2,h3,p,b{
-            font-family: 'Raleway', sans-serif;
-        }
-        ul{
-            list-style: none;
-        }
-        .div-padding{
-            padding: 15px 10px;
-        }
-        .div-horizontal-margin{
-            margin: 0px 10px;
-        }
-        .display-flex-horizontal{
-            display: flex;
-            align-items: center;
-        }
-        .CV-Container{
-            margin: auto;
-            display: flex;
-            height: 1058px;
-            width: 830px;
-        }
-        
-        /* Left part of CV */
-        .Personal-Data-Container{
-            position: relative;
-            width: 38%;
-            height: 100%;
-            border: solid black 4px;
-        }
-        .Img-Spacer{
-           height: 20%;
-        }
-        #Profile-Img{
-            position: absolute;
-            top: 25px;
-            right: -10px;
-            width: 80%;
-        }
-        .Personal-Data-SubContainer{
-            margin-top: 20px;
-            height: 80%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-        .Icon{
-            padding: 7px;
-            background-color: black;
-            color: #ffffff;
-            border-radius: 20px;
-            margin-block: 2px;
-            margin-right: 3px;
-        }
-        
-        /* Right part of CV */
-        .Skils-Data-Container{
-            width: 62%;
-            height: 100%;
-        }
-        .Name-Title{
-            height: 15%;
-            font-family: 'Caveat', cursive;
-            font-size: 3.5em;
-        }
-        .Skils-Data-Container-Title{
-            margin-bottom: 10px;
-            width: fit-content;
-            color: white;
-            background-color: black;
-            padding: 3px 50px;
-            border-radius: 20px;
-        }
-        .Skils-Data-Container-Info{
-            height: 85%;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .Horizontal-Line{
-            color: black;
-            size: 0.5px;
-        }
-        .Unorder-List1{
-            padding-left: 15px;
-        }
-        
-        .Unorder-List1 li{
-            margin: 5px;
-        }
-        .Skils-Technics-Container{
-            display: flex;
-            justify-content: space-between;
-        }
-    </style>
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/index.css">
     <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/cdb751df44.js"
-      crossorigin="anonymous"
-    ></script>
-
+    <script src="https://kit.fontawesome.com/cdb751df44.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -127,173 +19,228 @@
 <body>
     <div class="CV-Container div-padding">
 
-        <div class="Personal-Data-Container div-padding div-horizontal-margin">
-            <div class="Img-Spacer"></div>
-            <img 
-                id="Profile-Img"
-                src="https://scontent.fcyw4-1.fna.fbcdn.net/v/t39.30808-6/387147930_1714657018944908_5675621354853692840_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeF3ywzt5kwpW40f84nYzfb3K08Jjz4-UaQrTwmPPj5RpPgUoFVsdNAYcimuZ3pXo2aJKJ4G_wU-YaPhAScik5c8&_nc_ohc=PJjlHfhNSfUAX_7rCXj&_nc_ht=scontent.fcyw4-1.fna&oh=00_AfBb9eDZZHY0t_XHK-tjHP8bAuWQ3d32CZjmMGq5amUvCA&oe=65DFA0C1" alt="">
+        <div class="Personal-Data-Container flex-column radius-20 div-padding div-horizontal-margin">
+            <img class="Profile-Img radius-20" src="./assets/profile-picture.jpeg" alt="">
 
-            <div class="Personal-Data-SubContainer">
-                <div >
-                    <h2>Sobre mí</h2>
-                    <p>Me considero una persona proactiva y enérgica en el ámbito de adquirir habilidades para mi crecimiento personal y profesional, contando con experiencia en el desarrollo de proyectos colaborativos e individuales. Siempre dispuesto a aprender de mi entorno y la gente que me rodea.</p>
+            <div class="Personal-Data-SubContainer flex-column">
+                <div>
+                    <h2>Sobre mí</h2><br>
+                    <p>Me considero una persona proactiva y enérgica en el ámbito de adquirir habilidades para mi
+                        crecimiento personal y profesional, además, soy una persona muy aguerrida que se esfuerza por
+                        lograr mis objetivos.</p>
+                    <br>
+                    <p>Siempre estoy dispuesto de aprender de mi entorno y la gente que me rodea.</p>
                 </div>
 
-                <div >
-                    <h2>Información de contacto</h2>
+                <div>
+                    <h2>Información de contacto</h2><br>
                     <ul>
                         <li class="display-flex-horizontal">
-                            <i class="fa-sharp fa-solid fa-phone Icon" ></i>
-                            <p>461-350-35-60</p>
+                            <i class="fa-sharp fa-solid fa-phone Icon"></i>
+                            <p>461-230-0124</p>
                         </li>
                         <li class="display-flex-horizontal">
-                            <i class="fa-sharp fa-solid fa-envelope Icon" ></i>
+                            <i class="fa-sharp fa-solid fa-envelope Icon"></i>
                             <p>alfredo.jimeneztellez9@gmail.com</p>
                         </li>
                         <li class="display-flex-horizontal">
-                            <i class="fa-brands fa-github Icon" ></i>
+                            <i class="fa-brands fa-github Icon"></i>
                             <p>Alfred024</p>
                         </li>
                     </ul>
                 </div>
 
                 <div>
-                    <h2>Idiomas</h2>
+                    <h2>Idiomas</h2><br>
                     <ul>
-                        <li><p>Español (nativo)</p> </li>
-                        <li><p>Inglés C1</p></li>
-                        <li><p>Alemán A2</p></li>
+                        <li>
+                            <p>Español (nativo)</p>
+                        </li>
+                        <li>
+                            <p>Inglés C1</p>
+                        </li>
+                        <li>
+                            <p>Alemán A2</p>
+                        </li>
                     </ul>
                 </div>
 
-                <div >
-                    <h2>Aptitudes</h2>
+                <div>
+                    <h2>Aptitudes</h2><br>
                     <ul>
-                        <li><p>Compromiso</p></li>
-                        <li><p>Responsabilidad</p></li>
-                        <li><p>Empatía</p></li>
-                        <li><p>Honestidad</p></li>
-                        <li><p>Paciencia</p></li>
+                        <li>
+                            <p>Compromiso</p>
+                        </li>
+                        <li>
+                            <p>Responsabilidad</p>
+                        </li>
+                        <li>
+                            <p>Empatía</p>
+                        </li>
+                        <li>
+                            <p>Honestidad</p>
+                        </li>
+                        <li>
+                            <p>Paciencia</p>
+                        </li>
                     </ul>
                 </div>
             </div>
 
         </div>
 
-        <div class="Skils-Data-Container div-padding div-horizontal-margin">
-            <h1 class="Name-Title">José Alfredo <br>Jiménez Téllez</h1>
-            <hr class="Horizontal-Line">
-            
-            <div class="Skils-Data-Container-Info">
+        <div class="Skils-Data-Container flex-column radius-20 div-padding div-horizontal-margin">
+            <div>
+                <h1 class="Name-Title">José Alfredo <br>Jiménez Téllez</h1>
+                <hr>
+            </div>
+
+            <div class="Skils-Data-Container-Info flex-column">
                 <div>
                     <h3 class="Skils-Data-Container-Title">Experiencia</h3>
-                    
-                    <p><b>Desarrollo web</b></p>
+
+                    <p><b>Desarrollo</b></p>
                     <ul class="Unorder-List1">
                         <li>
-                            <p>Colaborador como desarrollador backend para el departamento de Desarrollo de Software del Tecnológico de Celaya.</p>
+                            <p>Intern del Área de Finanzas en Clarios.</p>
                         </li>
                         <li>
                             <p>Desarrollo frontend como Freelancer para empresas y clientes.</p>
                         </li>
                     </ul>
-
                     <p><b>Competencias</b></p>
-                    <ul class="Unorder-List1" >
+                    <ul class="Unorder-List1">
                         <li>
-                            <p>Participante de proyecto INNOVATEC en proyect de Inteligencia Artificial. </p>
+                            <p>Ganador concurso Innovatec 2024 en la etapa local.</p>
                         </li>
                         <li>
-                            <p>Participación en CodingCUP 2022 y 2023</p>
+                            <p>Participación en CodingCUP 2022 y 2023.</p>
                         </li>
                         <li>
-                            <p>Participación en el HackaTec 2022</p>
+                            <p>Participación en el HackaTec 2022.</p>
                         </li>
                     </ul>
-
                     <p><b>Voluntariado</b></p>
-                    <ul class="Unorder-List1"> 
+                    <ul class="Unorder-List1">
                         <li>
-                            <p>Ponente y colaborador impartiendo el taller de Git y Github durante la semana lince 2023.</p>
+                            <p>Ponente y colaborador impartiendo el taller de Git y Github durante la semana lince 2023.
+                            </p>
                         </li>
                         <li>
-                            <p>Ponente y colaborador impartiendo el taller de Búsquedas avanzadas en Chromne durante la semana lince 2023.</p>
+                            <p>Ponente y colaborador impartiendo el taller de Búsquedas avanzadas en Chromne durante la
+                                semana lince 2023.</p>
                         </li>
                         <li>
-                            <p>Colaborador como desarrollador frontend y asistente en el taller de Concurso de Basta en el CIITEC 2023.</p>
+                            <p>Colaborador como desarrollador frontend y asistente en el taller de Concurso de Basta en
+                                el
+                                CIITEC 2023.</p>
                         </li>
                     </ul>
+                </div>
 
-    
                 <div>
                     <h3 class="Skils-Data-Container-Title">Educación</h3>
                     <ul class="Unorder-List1">
                         <li>
                             <p><b>Escolar</b></p>
-                            <p>Estudiante de Sistemas Computacionales de 6to semestre en el Instituto Tecnológico de Celaya.</p>
+                            <p>Estudiante de Sistemas Computacionales de 6to semestre en el Instituto Tecnológico de
+                                Celaya.</p>
                         </li>
 
                         <li>
                             <p><b>Desarrollo WEB</b></p>
                             <p>Certficado de bootcamp de Desarrollo Web FullStack.</p>
                         </li>
-                        
+
                         <li>
                             <p><b>Redes</b></p>
                             <p>Certficado CIISCO de fundamentos de telecomunicaciones.</p>
                         </li>
                     </ul>
                 </div>
-    
+
                 <div>
                     <h3 class="Skils-Data-Container-Title">Habilidades técnicas</h3>
                     <div class="Skils-Technics-Container">
                         <div>
                             <ul>
                                 <li><b>Lenguajes</b></li>
-                                <li><p>JavaScript</p></li>
-                                <li><p>Dart</p></li>
-                                <li><p>HTML y CSS</p></li>
-                                <li><p>Java</p></li>
-                                <li><p>TypeScript</p></li>
+                                <li>
+                                    <p>Python</p>
+                                </li>
+                                <li>
+                                    <p>JavaScript</p>
+                                </li>
+                                <li>
+                                    <p>PHP</p>
+                                </li>
+                                <li>
+                                    <p>Dart</p>
+                                </li>
+                                <li>
+                                    <p>TypeScript</p>
+                                </li>
                             </ul>
                         </div>
-    
+
                         <div>
                             <ul>
                                 <li><b>Frameworks</b></li>
-                                <li><p>Flutter</p></li>
-                                <li><p>Express</p></li>
-                                <li><p>Nest</p></li>
-                                <li><p>React</p></li>
+                                <li>
+                                    <p>Flutter</p>
+                                </li>
+                                <li>
+                                    <p>Express</p>
+                                </li>
+                                <li>
+                                    <p>Nest</p>
+                                </li>
+                                <li>
+                                    <p>React</p>
+                                </li>
                             </ul>
                         </div>
-    
+
                         <div>
                             <ul>
                                 <li><b>Otras herramientas</b></li>
-                                <li><p>Git y Github</p></li>
-                                <li><p>Docker</p></li>
-                                <li><p>Putty</p></li>
-                                <li><p>NaviCad</p></li>
+                                <li>
+                                    <p>Git y Github</p>
+                                </li>
+                                <li>
+                                    <p>Docker</p>
+                                </li>
+                                <li>
+                                    <p>Putty</p>
+                                </li>
+                                <li>
+                                    <p>NaviCad</p>
+                                </li>
                             </ul>
                         </div>
 
                         <div>
                             <ul>
                                 <li><b>SGBD´s</b></li>
-                                <li><p>PostgreSQL</p></li>
-                                <li><p>MariaDB</p></li>
-                                <li><p>MongoDB</p></li>
-                                <li><p>IsarDB</p></li>
+                                <li>
+                                    <p>PostgreSQL</p>
+                                </li>
+                                <li>
+                                    <p>MariaDB</p>
+                                </li>
+                                <li>
+                                    <p>MongoDB</p>
+                                </li>
+                                <li>
+                                    <p>IsarDB</p>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-           
-        </div>
 
-    </div>
+        </div>
 </body>
+
 </html>

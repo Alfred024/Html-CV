@@ -1,31 +1,41 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-/* body{
-    display: flex;
-    justify-content: center;
-    height: fit-content;
-    border: solid green 2px;
-} */
-h2,h3,p,b{
     font-family: 'Raleway', sans-serif;
 }
-ul{
+
+:root {
+    --blue-primary: #304b7c;
+}
+
+ul {
     list-style: none;
 }
-.div-padding{
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-padding {
     padding: 15px 10px;
 }
-.div-horizontal-margin{
+
+.div-horizontal-margin {
     margin: 0px 10px;
 }
-.display-flex-horizontal{
+
+.display-flex-horizontal {
     display: flex;
     align-items: center;
 }
-.CV-Container{
+
+.radius-20 {
+    border-radius: 20px;
+}
+
+.CV-Container {
     margin: auto;
     display: flex;
     height: 1058px;
@@ -33,31 +43,27 @@ ul{
 }
 
 /* Left part of CV */
-.Personal-Data-Container{
-    position: relative;
+.Personal-Data-Container {
     width: 38%;
     height: 100%;
-    border: solid black 4px;
+    background-color: var(--blue-primary);
+    color: white;
 }
-.Img-Spacer{
-   height: 20%;
+
+.Profile-Img {
+    width: 100%;
+    border-radius: 20px;
 }
-#Profile-Img{
-    position: absolute;
-    top: 25px;
-    right: -10px;
-    width: 80%;
-}
-.Personal-Data-SubContainer{
+
+.Personal-Data-SubContainer {
     margin-top: 20px;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
     justify-content: space-around;
 }
-.Icon{
+
+.Icon {
     padding: 7px;
-    background-color: black;
+    background-color: var(--blue-primary);
     color: #ffffff;
     border-radius: 20px;
     margin-block: 2px;
@@ -65,42 +71,40 @@ ul{
 }
 
 /* Right part of CV */
-.Skils-Data-Container{
+.Skils-Data-Container {
     width: 62%;
-    height: 100%;
+    border: solid var(--blue-primary) 4px;
 }
-.Name-Title{
-    height: 15%;
+
+.Name-Title {
     font-family: 'Caveat', cursive;
     font-size: 3.5em;
 }
-.Skils-Data-Container-Title{
-    margin-bottom: 10px;
-    width: fit-content;
+
+.Skils-Data-Container-Title {
     color: white;
-    background-color: black;
-    padding: 3px 50px;
-    border-radius: 20px;
+    padding: 3px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--blue-primary);
 }
-.Skils-Data-Container-Info{
-    height: 85%;
+
+.Skils-Data-Container-Info {
+    height: 100%;
     padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-.Horizontal-Line{
-    color: black;
-    size: 0.5px;
-}
-.Unorder-List1{
+
+.Unorder-List1 {
     padding-left: 15px;
 }
 
-.Unorder-List1 li{
+.Unorder-List1 li {
     margin: 5px;
 }
-.Skils-Technics-Container{
+
+.Skils-Technics-Container {
     display: flex;
     justify-content: space-between;
 }
